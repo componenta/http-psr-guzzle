@@ -1,0 +1,25 @@
+{
+    "name": "componenta/http-psr-guzzle",
+    "description": "Guzzle PSR-7 and PSR-17 integration for Componenta HTTP",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "componenta/config": "^1.0",
+        "guzzlehttp/psr7": "^2.8",
+        "psr/http-message": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Componenta\\Http\\Psr7\\Guzzle\\": "src/"
+        }
+    },
+    "extra": {
+        "componenta": {
+            "config-providers": [
+                "Componenta\\Http\\Psr7\\Guzzle\\ConfigProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
